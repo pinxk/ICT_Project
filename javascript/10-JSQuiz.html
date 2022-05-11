@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Quiz</title>
+    <script>
+        function changeColor() {
+var s = document.getElementById("colors");
+var cv = s.options[s.selectedIndex].value;
+var ct = s.options[s.selectedIndex].text;
+document.getElementById('bg').style.background=ct;
+}
+function quiz() {
+                var sum = 0;    
+                
+               
+                if (document.getElementById('r1').checked) {
+                    sum += 1;
+                }
+                if (document.getElementById('r5').checked) {
+                    sum += 1
+                }
+                if (document.getElementById('r9').checked) {
+                    sum += 1
+                }
+                
+                if (sum == 0) {
+                 
+                    alert("score is:" + sum + "    Poor ");
+                }
+                else if (sum == 1) {
+                   
+                     alert("score is:" + sum + "    Fair ");
+                }
+                else if (sum == 2) {
+                   
+                    alert("score is: " + sum + "    Good ");
+                }
+                else {
+                   
+                    alert("score is:" + sum + "    Very Good " );
+                }
+            }
+       
+    </script>
+</head>
+    <body  id="bg">
+        <center>
+            <h1>Background Color using Dropdown</h1>
+        <select id="colors" onchange="changeColor()">
+            <option value="1">Red</option>
+            <option value="2">Blue</option>
+            <option value="3" >Green</option>
+            <option value="4" selected="selected">white</option>
+          </select>
+        </center>
+        <form id="f1">
+            <center>
+            <h1>Quiz Program</h1></center>
+            <p> <b>1.What does ALU stand form</b></p>
+            <input type="radio" name="rb1" id="r1"   >Arithmetic Logic Unit<br>
+            <input type="radio" name="rb1" id="r2"   >Arithmetic Light Unit<br>
+            <input type="radio" name="rb1" id="r3"   >Arithmetic Lead Unit<br>
+            <input type="radio" name="rb1" id="r4"   >Arithmetic Logics Unit<br>
+
+            <p><b>2.What does ASCII stand form</b></p>
+            <input type="radio" name="rb2" id="r5" >American Standard Code for Information Interchange <br>
+            <input type="radio" name="rb2" id="r6" >American Standards Code for Information Interchange<br>
+            <input type="radio" name="rb2" id="r7" >American Standard Code for Information Interchanger<br>
+            <input type="radio" name="rb2" id="r8" >American Standard Code for International Interchange<br>
+    
+            <p><b>3.What does BSNL stand form</b></p>
+            <input type="radio" name="rb3" id="r9" >Bharat Sanchar Nigam Limited<br>
+            <input type="radio" name="rb3" id="r10" >Bharat Sanchurer Nigam Limited<br>
+            <input type="radio" name="rb3" id="r11" >Bharat Sanchar Nigm Limited<br>
+            <input type="radio" name="rb3" id="r12" >Bharatt Sanchar Nigam Limited<br>
+
+            <button type="button"  onclick="quiz()">submit</button>
+
+        </form>
+
+</body>
+</html>

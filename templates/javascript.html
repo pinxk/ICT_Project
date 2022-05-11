@@ -1,0 +1,78 @@
+{% extends "base.html" %}
+{% load static %}
+{% static "images" as baseUrl %}
+{% block content %}
+
+    <center>
+        <table border = "1" width = "100%">
+            <tr>
+                <td>
+                    <a href = "{% static 'javascript/4-tables.html' %}" target = "4">Tables</a>
+                </td>
+                <td>
+                    <a href = "{% static 'javascript/5-JSoperators.html' %}" target = "5">Operators</a>
+                </td>
+                <td>
+                    <a href = "{% static 'javascript/7-JSalertBox.html' %}" target = "6">Alert Box</a>
+                </td>
+                <td>
+                    <a href = "{% static 'javascript/8-JSconfirmBox.html' %}" target = "7">Confirm Box</a>
+                </td>
+                <td>
+                    <a href = "{% static 'javascript/9-JSPromptBox.html' %}" target = "8">Prompt Box</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <iframe src = "" name = "4" height = "400px" width = "100%"></iframe>
+                </td>
+                <td>
+                    <iframe src = "" name = "5" height = "400px" width = "100%"></iframe>
+                </td>
+                <td>
+                    <iframe src = "" name = "6" height = "400px" width = "100%"></iframe>
+                </td>
+                <td>
+                    <iframe src = "" name = "7" height = "400px" width = "100%"></iframe>
+                </td>
+                <td>
+                    <iframe src = "" name = "8" height = "400px" width = "100%"></iframe>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href = "{% static 'javascript/10-JSbranchingStmt.html' %}" target = "9">Branching Statements</a>
+                </td>
+                <td>
+                    <a href = "{% static 'javascript/10-JSQuiz.html' %}" target = "10">Quiz</a>
+                </td>
+                <td>
+                    <a href = "{% static 'javascript/11-JScolors.html' %}" target = "11">Colours</a>
+                </td>
+                <td>
+                    <a href = "{% static 'javascript/12-JSActions.html' %}" target = "12">Actions</a>
+                </td>
+                <td>
+                    <a href = "{% static 'javascript/14-JS Natural Numbers.html' %}" target = "13">Natural Numbers</a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <iframe src = "" name = "9" height = "400px" width = "100%"></iframe>
+                </td>
+                <td>
+                    <iframe src = "" name = "10" height = "400px" width = "100%"></iframe>
+                </td>
+                <td>
+                    <iframe src = "" name = "11" height = "400px" width = "100%"></iframe>
+                </td>
+                <td>
+                    <iframe src = "" name = "12" height = "400px" width = "100%"></iframe>
+                </td>
+                <td>
+                    <iframe src = "" name = "13" height = "400px" width = "100%"></iframe>
+                </td>
+            </tr>
+        </table>
+    </center>
+    {% endblock %}

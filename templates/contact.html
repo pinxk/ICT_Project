@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% static "images" as baseUrl %}
+{% block content %}
+
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <img src = "{% static 'images/contact.jpg' %}">
+                </td>
+                <td>
+                    <center>
+                    <address>
+                        <font color = "blue"><u><b>KC High</b></u></font> <br>
+                        <b>Olympia Panache</b> <br>
+                        <b>33 Rajiv Gandhi Salai (OMR)</b> <br>
+                        <b>Navalur, Chennai - 600130</b> <br>
+                        <b>Tamil Nadu, India</b>
+                    </address>
+                </center>
+                </td>
+            </tr>
+        </table>
+    </center>
+    {% endblock %}

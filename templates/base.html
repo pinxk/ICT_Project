@@ -1,0 +1,66 @@
+{% load static %}
+{% static "images" as baseUrl %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT Website</title>
+    <link rel="stylesheet" href="{% static 'css/external.css' %}">
+</head>
+<body>
+    <center>
+        <table width = "100%">
+            <tr>
+                <td><img src = "{% static 'images/logo3.PNG' %}" alt = "" height = "125" width = "100"></td>            
+                <td class = "td"><a href = "/" class = "a">Home</a></td>
+                <td class = "td"><a href = "{% url 'aboutMe'%}" class = "a">About me</a></td>
+                <td class = "td"><a href = "http://127.0.0.1:8000/admin/" class = "a">Login</a></td>
+                <td class = "td"><a href = "{% url 'javascript' %}" class = "a">JavaScript</a></td>
+                <td class = "td"><a href = "{% url 'gallery' %}" class = "a">Gallery</a></td>            
+                <td class = "td"><a href = "{% url 'contact' %}" class = "a">Contact Us</a></td>
+            </tr>
+        </table>
+    </center>
+
+    {% block content %}
+    {% endblock %}
+
+    <table width = "100%">
+        <tr class = "t1">
+            <td>Menu Link</td>
+            <td>Venue</td>
+            <td>Contact Us</td>
+        </tr>
+        <tr class = "t2">
+            <td>
+                <a href = "/">Home</a> <br>
+                <a href = "{% url 'aboutMe'%}">About me</a> <br>
+                <a href = "{% url 'login' %}">HTML</a> <br>
+                <a href = "{% url 'javascript' %}">JavaScript</a> <br>
+                <a href = "{% url 'gallery' %}">Gallery</a> <br>
+                <a href = "{% url 'contact' %}">Contact Us</a> <br>
+            </td>
+            <td>
+                <center>
+                    <adress> <i>
+                        KC High <br>
+                        Olympia Panache <br>
+                        33, Rajiv Gandhi Salai (OMR) <br>
+                        Navalur, Chennai - 600130 <br>
+                        Tamil Nadu, India <br>
+                    </address> </i>
+                </center>
+            </td>
+            <td>
+                <font color = "blue">Phone</font> <br>
+                (+91) 94452-90114 | (+91) 044-24475167 <br>
+                <font color = "blue">Email</font> <br>
+                rradmin@kchigh.com
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

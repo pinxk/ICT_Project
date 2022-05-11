@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS looping</title>
+    <script>
+       function natNum() {
+                var limit;
+                var txt = "", storage = 1;
+                limit = parseInt(f.tb1.value); // get the value from the user
+                 // ranges => integer -> -32767 to 32767
+                
+                while (storage <= limit) {
+                    txt += +storage + "<br>";
+                    storage=storage+1  //  storage++;
+                  
+                } 
+                document.getElementById("num").innerHTML = txt;
+            }
+            function mulTab() {
+                var n,t;
+                var txt = "", i = 0;
+                n = parseInt(f.tb2.value);
+                t = parseInt(f.tb3.value);
+                var v=t;                
+                do {
+                    //document.writeln(t+"<br>");
+                    document.getElementById("multi").innerHTML +=i+1+"*"+v+"="+ t + "<br>";
+                    t = t + v;
+                    i++;
+
+                }while (i < n);
+
+            }
+    </script>
+</head>
+<body>
+    <form id="f">
+        <h1>To display Natural Numbers</h1>
+         
+         Enter the limit: <input type="text" id="tb1">
+        <button type="button" onclick="natNum()">Try it</button>
+        <p id="num"></p>
+
+        <h1>Multiples</h1>
+Enter the limit:<input type="text" id="tb2"><br><br>
+Enter the value:<input type="text" id="tb3">
+<button type="button" onclick="mulTab()">Calculate</button>
+
+<p id="multi"></p>
+    </form>
+  
+
+
+
+
+</body>
+</html>

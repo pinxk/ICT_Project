@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+{% static "images" as baseUrl %}
+{% block content %}
+
+    <center>
+        <table>
+            <tr>
+                <td>
+                    <img src = "{% static 'images\WelcomeIMG_03.jpg' %}">
+                </td>
+                <td>
+                    <form>
+                        <b>Username:</b> <input type = "textbox"> <br> <br> <br>
+                        <b>Password:</b> <input type = "password"> <br> <br>
+                        <button>Sign in</button>
+                        <button>Sign up</button>
+                    </form>
+                </td>
+                <td>
+                    <img src = "{% static 'images/BirdIMG_03.gif' %}" width = "102%">
+                </td>
+            </tr>
+        </table>
+    </center>
+
+    {% endblock %}

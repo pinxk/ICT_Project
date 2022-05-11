@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithmetic Operators</title>
+    <script>
+        function add()
+        {
+            var x,y,z;
+            x=parseInt(f1.tb1.value)
+            y=parseInt(f1.tb2.value)
+            z=x+y
+            document.getElementById('tb3').value=z
+            document.getElementById('page1').innerHTML=z
+        }
+        function sub()
+        {
+            var x,y,z;
+            x=parseInt(f1.tb1.value)
+            y=parseInt(f1.tb2.value)
+            z=x-y
+            document.getElementById('tb3').value=z
+            document.getElementById('page2').innerHTML=z
+        }
+    </script>
+</head>
+<body>
+    <form action="" id="f1">
+        Enter first value: <input type="text" id="tb1"><br><br><br>
+        ENter second value: <input type="text" id="tb2"><br><br>
+        <button type="button" onclick="add()">Addition</button><br><br>
+        <button type="button" onclick="sub()">Subraction</button><br><br>
+        Result on textbox <input type="text" id="tb3" readonly>
+        Addition <p id="page1"></p>
+        Subraction <p id="page2"></p>
+        
+
+    </form>
+</body>
+</html>

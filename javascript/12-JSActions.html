@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Actions</title>
+    <script>
+          function colorchange(id) {
+                var background = document.getElementById('select').style.backgroundColor;
+                if (background == "pink") {
+                    document.getElementById(id).style.background="red"; 
+                    }
+                    else{
+                    document.getElementById(id).style.background="pink";    
+                    }
+                }
+
+                function overlap() {
+         
+                if (document.getElementById('2').src.match("{% static 'images/lamp1.jpg' %}")) {
+                    document.getElementById('2').src = "{% static 'images/lamp2.jpg' %}";
+                }
+                else {
+                    document.getElementById('2').src = "{% static 'images/lamp1.jpg' %}";
+                }
+            }
+
+
+
+    </script>
+</head>
+<body>
+    <center>
+        <h1>Change Color</h1>
+        <input type="button" value="Click for color change" id="select" onclick="colorchange('select')" style="width:100%; height:100px;"/>
+    </center>
+
+    <center>
+        <h1>Overlapping Image</h1>
+        <p align="center"><img src="{% static 'images/lamp1.jpg' %}"  width="300" height="200" id="2"></img></p>
+        <button type="button" onclick="overlap()" id="click">Click me</button>
+     </center>
+ 
+<center>
+<h1>Calculator Program</h1>
+<form id="f">
+    <input type="text" size="25" name="t" /><br><br>
+    <input type="button" value="7" size="25" onclick="f.t.value+='7'"/>&nbsp&nbsp
+    <input type="button" value="8" size="25" onclick="f.t.value+='8'"/>&nbsp&nbsp
+    <input type="button" value="9" size="25" onclick="f.t.value+='9'"/>&nbsp&nbsp
+    <input type="button" value="/" size="25" onclick="f.t.value+='/'"/><br><br>
+    <input type="button" value="4" size="25" onclick="f.t.value+='4'"/>&nbsp&nbsp
+    <input type="button" value="5" size="25" onclick="f.t.value+='5'"/>&nbsp&nbsp
+    <input type="button" value="6" size="25" onclick="f.t.value+='6'"/>&nbsp&nbsp
+    <input type="button" value="*" size="25" onclick="f.t.value+='*'"/><br><br>
+    <input type="button" value="1" size="25" onclick="f.t.value+='1'"/>&nbsp&nbsp
+    <input type="button" value="2" size="25" onclick="f.t.value+='2'"/>&nbsp&nbsp
+    <input type="button" value="3" size="25" onclick="f.t.value+='3'"/>&nbsp&nbsp
+    <input type="button" value="-" size="25" onclick="f.t.value+='-'"/><br><br>
+    <input type="button" value="0" size=30 onclick="f.t.value+='0'"/>&nbsp&nbsp
+    <input type="button" value="." size=30 onclick="f.t.value+='.'"/>&nbsp&nbsp
+    <input type="button" value="+" size=30 onclick="f.t.value+='+'"/>&nbsp&nbsp
+    <input type="button" value="=" size=30 onclick="f.t.value=eval(f.t.value)"/>&nbsp&nbsp
+    </form>
+
+</center>
+
+</body>
+</html>

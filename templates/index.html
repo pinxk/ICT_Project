@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% load static %}
+{% static "images" as baseUrl %}
+{% block content %}
+
+
+    <table>
+        <tr>
+            <td>
+                <img src="{% static 'images\KChigh.png' %}"  alt="" width="177%">
+            </td>
+        </tr>
+    </table>
+    <center><h1><font color="purple">Welcome to KC High</font></h1></center>
+    <table width = "100%">
+        <tr class = "t1">
+            <td>
+                Pre-Prep
+            </td>
+            <td>
+                Primary School
+            </td>
+            <td>
+                Middle School
+            </td>
+            <td>
+                High School
+            </td>
+        </tr>
+        <tr class = "t2">
+            <td>
+                At the Pre-Prep level, the special bond between parent and child is nurtured by providing a stimulating environment for both the parent and the child to learn together as they explore the world through their senses.
+            </td>
+            <td>
+                At the Cambridge Primary level, the school offers a wide range of subjects, viz., Language Arts, with English as a First Language and a choice of Tamil, Hindi or Spanish as Second Language, Mathematics, Science, Social Studies.
+            </td>
+            <td>
+                At the Cambridge Secondary 1 level too we offer a wide range of subjects, viz., Language Arts, with English as a First Language and a choice of Tamil, Hindi or Spanish as Second Language, Information and Communication Technology, Art.
+            </td>
+            <td>
+                Besides being the most popular international qualifications worldwide for 14 to 16 year olds, IGCSE subject curricula develops skills of communication, creativity, enquiry, research and problem solving.
+            </td>
+        </tr>
+    </table>
+    <blockquote class = "bg1">
+        <h2>Our mission at KC High International School is to provide a joyful and challenging learning environment that caters to a diverse student population and fosters a connect with nature and culture, through a team of caring and passionate facilitators.</h2>
+    </blockquote>
+
+{% endblock %}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS colors</title>
+    <script>
+     function calculate() {
+        var x;
+        x = parseInt(tbper. value);
+        if (x >= 40) {
+            alert("Pass")
+            document.getElementById("res").innerHTML = "<b>Pass<b>";
+            document.getElementById('res').style.color = 'green';
+          
+          
+            
+        }
+        else{
+            alert("Fail") 
+            document.getElementById("res").innerHTML = "<b>Fail<b>";
+            document.getElementById('res').style.color = 'red';      
+            
+        }
+    }
+   
+
+    </script>
+</head>
+<body id="bg">
+    <center>
+    <h1>Background Color</h1>
+        <input type="radio" name="t"  onclick="document.getElementById('bg').style.background='lightpink'" >Pink
+        <input type="radio" name="t"  onclick="document.getElementById('bg').style.background='#CD5C5C'" >Indian red
+        <input type="radio" name="t"  onclick="document.getElementById('bg').style.background='Yellow'" >Yellow
+        <input type="radio" name="t"  onclick="document.getElementById('bg').style.background='Thistle'" >Thistle
+        <input type="radio" name="t"  onclick="document.getElementById('bg').style.background='cyan'" >Cyan
+    </center>
+
+    <center>
+        <h1>Average Calculation </h1>
+        Name: <input type="text" id="tbname"><br><br>
+        Grade: <input type="text" id="tbgrade"><br><br>
+        Section: <input type="text" id="tbsec"><br><br>
+        Percentage: <input type="text" id="tbper"><br><br>
+        <button type="button" onclick="calculate()">Submit</button>
+       
+        <p id="res"> </p>      
+       
+    </center>
+    <center>
+        <h1>Background Color-task</h1>
+            <input type="button" value="Pink" name="t"  onclick="document.getElementById('bg').style.background='lightpink'" >
+            <input type="button" value="Indian red" name="t"  onclick="document.getElementById('bg').style.background='#CD5C5C'" >
+            <input type="button" value="Yellow" name="t"  onclick="document.getElementById('bg').style.background='Yellow'" >
+            <input type="button" value="Thistle" name="t"  onclick="document.getElementById('bg').style.background='Thistle'" >
+            <input type="button" value="Cyan" name="t"  onclick="document.getElementById('bg').style.background='cyan'" >
+        </center>
+</body>
+</html>
